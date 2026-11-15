@@ -42,10 +42,12 @@
 		<UseSystemResourceKeys>false</UseSystemResourceKeys>
 
 		<!-- Display name -->
-		<ApplicationTitle>Apps2Samsung</ApplicationTitle>
+		<ApplicationTitle>Apps2Samsung (test)</ApplicationTitle>
 
-		<!-- App Identifier -->
-		<ApplicationId>nl.madebypatrick.apps2samsung</ApplicationId>
+		<!-- App Identifier. Changed on this fork branch only: a different ApplicationId makes the
+		     test APK install alongside the real one instead of colliding with it. Same id + a
+		     different signing key would be rejected by Android outright, not installed side by side. -->
+		<ApplicationId>nl.madebypatrick.apps2samsung.test</ApplicationId>
 
 		<!-- Versions. These are placeholders for local and PR builds only: both release
 		     workflows override them on the dotnet publish command line, and
